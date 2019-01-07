@@ -1,0 +1,32 @@
+#root{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+input[type="text"]{
+    width: 100%;
+    border-radius: 4px;
+    outline: 0;
+    border: 1px solid gray;
+    padding: 10px
+}
+
+label{
+    font-size: 14px;
+}
+
+.example-appear{
+    opacity: 0.01;
+}
+.example-appear.example-appear-active{
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+.example-leave{
+    opacity: 1;
+}
+.example-leave.example-leave-active{
+    opacity: 0.01;
+    transition: opacity 500ms ease-in;
+}
