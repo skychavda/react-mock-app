@@ -17,16 +17,18 @@ label{
 }
 
 .example-appear{
-    opacity: 0.01;
+    animation: fadein 1s ease-in-out;
 }
-.example-appear.example-appear-active{
-    opacity: 1;
-    transition: opacity 500ms ease-in;
+
+@keyframes fadein{
+    from {opacity: 0.01;}
+    to {opacity: 1;}
 }
+
 .example-leave{
-    opacity: 1;
+    animation: fadeout 1s ease-out;
 }
-.example-leave.example-leave-active{
-    opacity: 0.01;
-    transition: opacity 500ms ease-in;
+@keyframes fadeout{
+    from {opacity: 1;}
+    to {opacity: 0.01;}
 }

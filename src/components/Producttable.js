@@ -27,17 +27,17 @@ class ProductTable extends React.Component{
                 <ProductRow 
                 product={product}
                 key={product.name}
-                />
+                stockOnly={inStockOnly}/>
             );
             lastCategory = product.category;
         }
 
         )
         return(
-            <table>
+            <table width="100%">
                 <thead>
                     <tr>
-                        <td>Name</td>
+                        <td width="50%">Name</td>
                         <td>Price</td>
                     </tr>
                 </thead>
